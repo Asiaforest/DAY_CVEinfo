@@ -55,3 +55,7 @@
 <img src="./img/p1.jpg" style="zoom: 50%;" />
 
 <img src="./img/p2.jpg" style="zoom:50%;" />
+
+现在里面有2个点要注意：
+1.pubEndDate = str(today)+'T00:00:00:000 UTC-05:00'需要在代码中添加
+2.sendwx函数中的"chatid": "CVE",这里要先使用https://work.weixin.qq.com/api/doc/90000/90135/90245中介绍的使用api创建chatid为CVE的会话
